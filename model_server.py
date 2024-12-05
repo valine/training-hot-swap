@@ -22,7 +22,7 @@ import torch
 from transformers import AutoTokenizer, MistralForCausalLM, AutoConfig
 from transformers import logging as hf_logging
 
-MODEL_NAME = "/models/latent-descent/base"
+MODEL_NAME = "mistralai/Mistral-7B-Instruct-v0.2"
 
 class ExecutionTask:
     def __init__(self, project_files, main_file, project_root, debug, client_socket):
