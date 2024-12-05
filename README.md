@@ -2,7 +2,9 @@
 
 This is an example of how to hotswap pytorch training code without unloading the model weights from VRAM. 
 
-Set your model download location in model_server.py
+Set your model download location in model_server.py.
+
+Compatible with Intellj debug server. Set your debug server port to 5678
 
 How to run:
 Launch the server and keep it running
