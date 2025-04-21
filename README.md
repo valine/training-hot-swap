@@ -1,6 +1,6 @@
 # Training Hot Swap
 
-This is an example of how to hotswap PyTorch training code without unloading the model weights from VRAM.
+This is an example of how to hotswap PyTorch training code without unloading your model weights from VRAM.
 
 For large LLMs it can take upwards of 30 seconds to load a model from disk to VRAM. Waiting 30 seconds every time you want to rerun your script slows down development. This is a barebones implementation of a method to keep large models in VRAM even after your training script exits. If a model reload is necessary, it happens in the background after exit ensuring the model will be ready immediately the next time your script is run.
 
