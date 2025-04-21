@@ -31,7 +31,7 @@ This code goes away:
 And is replaced with:
 ```python
 def get_model(self):
-    """Get model either from global context or load it fresh"""
+    """Get model either from global context"""
     global model  # Reference the global model variable
 
     try:
