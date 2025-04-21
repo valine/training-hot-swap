@@ -18,14 +18,13 @@ To begin using this in your development simply swap your .from_pretrained call a
 
 This code goes away:
 ```python
-
-  model = MistralForCausalLM.from_pretrained(
-      self.model_path,
-      torch_dtype=torch.float16,
-      device_map=device,
-      use_flash_attention_2=False,
-      config=self.config,
-  )
+model = MistralForCausalLM.from_pretrained(
+    self.model_path,
+    torch_dtype=torch.float16,
+    device_map=device,
+    use_flash_attention_2=False,
+    config=self.config,
+)
 ```
 
 And is replaced with:
