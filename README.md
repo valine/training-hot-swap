@@ -10,6 +10,10 @@ This can also be used over a VPN for remote code execution. IntelliJ's remote SS
 
 Some work has also been done to ensure compatibility with the DearImgui Python bindings. UI code can be submitted to the server along with your training script. I personally like to build out UI for my training scripts to monitor progress, loss over time, and enable easy evaluation. Submitting your UI code along with your training code ensures that your app will launch instantly.
 
+Here's a GUI from an app that displays intermediate output of Mistral 7B. It takes about 0.32 seconds on my machine from when I run the code to when I can interact with the model, and that's including initializtion time for the GUI.
+![Screenshot from 2024-12-06 01-35-09](https://github.com/user-attachments/assets/fe38bcb0-0a37-4731-a565-9a785f0885b0)
+
+
 Set your model download location in model_server.py.
 
 Compatible with IntelliJ debug server. Set your debug server port to 5678.
