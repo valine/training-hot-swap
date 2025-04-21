@@ -12,7 +12,7 @@ Some work has also been done to ensure compatibility with the DearImgui Python b
 
 Here's a GUI from an app that displays intermediate output of Mistral 7B. It takes about 0.32 seconds on my machine from when I run the code to when I can interact with the model, and that's including initializtion time for the GUI.
 ![Screenshot from 2024-12-06 01-35-09](https://github.com/user-attachments/assets/fe38bcb0-0a37-4731-a565-9a785f0885b0)
-
+As an aside, you can find more transformer visualizations of mine here: https://x.com/lukasvaline
 
 Set your model download location in model_server.py.
 
