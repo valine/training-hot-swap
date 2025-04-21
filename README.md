@@ -14,6 +14,37 @@ Set your model download location in model_server.py.
 
 Compatible with IntelliJ debug server. Set your debug server port to 5678.
 
+To begin using this in your development simply swap your .from_pretrained call and reference the global variable 'model'
+
+This code goes away:
+```python
+
+  model = MistralForCausalLM.from_pretrained(
+      self.model_path,
+      torch_dtype=torch.float16,
+      device_map=device,
+      use_flash_attention_2=False,
+      config=self.config,
+  )
+```
+
+And is replaced with:
+```python
+def get_model(self):
+    """Get model either from global context or load it fresh"""
+    global model  # Reference the global model variable
+
+    try:
+        # Check if model exists in global scope
+        model
+    except NameError:
+        return None
+
+    return model
+
+model = get_model()
+```
+
 How to run:
 Launch the server and keep it running
 ```bash
