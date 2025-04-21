@@ -8,10 +8,10 @@ This works by spawning a second process that stays active after your target scri
 
 This can also be used over a VPN for remote code execution. IntelliJ's remote SSH interpreter is quite buggy and not ideal for seamless remote development. Configure model_server.py to run on a remote machine, and run client.py on your development machine. Debugging with the IntelliJ debugger is supported in this configuration as well, enabling an almost seamless development experience with scripts that run instantly and are easily debuggable.
 
-Some work has also been done to ensure compatibility with the DearImgui Python bindings. UI code can be submitted to the server along with your training script. I personally like to build out UI for my training scripts to monitor progress, loss over time, and enable easy evaluation. Submitting your UI code along with your training code ensures that your app will launch instantly.
-
 ---
 ## GUI example
+
+Some work has also been done to ensure compatibility with the DearImgui Python bindings. UI code can be submitted to the server along with your training script. I personally like to build out UI for my training scripts to monitor progress, loss over time, and enable easy evaluation. Submitting your UI code along with your training code ensures that your app will launch instantly.
 
 Here's a GUI from an app that displays intermediate output of Mistral 7B. It takes about 0.32 seconds on my machine from when I run the code to when I can interact with the model, and that's including initializtion time for the GUI.
 ![Screenshot from 2024-12-06 01-35-09](https://github.com/user-attachments/assets/fe38bcb0-0a37-4731-a565-9a785f0885b0)
