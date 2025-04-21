@@ -63,6 +63,6 @@ Submit the training code to the server
 training-hot-swap$ python client.py ./src ./src/sample_train.py
 ```
 ---
-## Other cobsiderations 
+## Other considerations 
 
 This script is a major potential security vulnerability. This is a server which by design executes arbitrary code. Don't expose this server to the internet directly. 
