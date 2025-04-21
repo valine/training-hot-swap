@@ -143,7 +143,6 @@ class DebugClient:
         }
 
         print(f"Sending project to server at port {self.port}...")
-
         client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
         client_socket.settimeout(1.0)  # Add timeout for recv operations
         client_socket.connect(('localhost', self.port))
