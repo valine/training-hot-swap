@@ -17,7 +17,8 @@ Here's a GUI from an app that displays intermediate output of Mistral 7B. It tak
 ![Screenshot from 2024-12-06 01-35-09](https://github.com/user-attachments/assets/fe38bcb0-0a37-4731-a565-9a785f0885b0)
 As an aside, you can find more transformer visualizations of mine here: https://x.com/lukasvaline
 
-
+---
+## Usage
 Set your model download location in model_server.py.
 
 Compatible with IntelliJ debug server. Set your debug server port to 5678.
